@@ -1,18 +1,110 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
+import { AiOutlineHeart } from "react-icons/ai";
+
 import "../../styles/home.css";
 
 export const Home = () => (
   <div className="mt-5 ms-5">
-    <div className="ms-3">
-      <h1>Characters</h1>
+    <div className="ms-3 mb-5">
+      <h1 className="characters-title">Characters</h1>
     </div>
-
-    <p>
-      <img src={rigoImage} />
-    </p>
-    <a href="#" className="btn btn-success">
-      If you see this green button, bootstrap is working
-    </a>
+    <div className="card-group-wrapper ms-3">
+      <div className="card-group row gx-5">
+        <div className="col">
+          <div className="card">
+            <img
+              src="https://via.placeholder.com/400"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body">
+              <h5 className="card-title">Character Name</h5>
+              <p className="card-text">
+                Gender: male<br></br>
+                Hair color: blonde<br></br>
+                Eye color: blue
+              </p>
+              <div className="d-grid gap-2 d-md-block mt-3 mb-2">
+                <div className="row justify-content-evenly">
+                  <button className="btn btn-primary ms-2 col" type="button">
+                    Learn more!
+                  </button>
+                  &nbsp;
+                  <button
+                    className="col text-end bg-transparent border-0"
+                    type="button"
+                  >
+                    <i className="fa fa-heart me-5 fa-2x text-danger" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <img
+              src="https://via.placeholder.com/400"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body">
+              <h5 className="card-title">Character Name</h5>
+              <p className="card-text">
+                Gender: male<br></br>
+                Hair color: blonde<br></br>
+                Eye color: blue
+              </p>
+              <div className="d-grid gap-2 d-md-block mt-3 mb-2">
+                <div className="row justify-content-evenly">
+                  <button className="btn btn-primary ms-2 col" type="button">
+                    Learn more!
+                  </button>
+                  &nbsp;
+                  <button
+                    className="col text-end bg-transparent border-0"
+                    type="button"
+                  >
+                    <i className="fa fa-heart me-5 fa-2x text-danger" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <img
+              src="https://via.placeholder.com/400"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body">
+              <h5 className="card-title">Character Name</h5>
+              <p className="card-text">
+                Gender: male<br></br>
+                Hair color: blonde<br></br>
+                Eye color: blue
+              </p>
+              <div className="d-grid gap-2 d-md-block mt-3 mb-2">
+                <div className="row justify-content-evenly">
+                  <button className="btn btn-primary ms-2 col" type="button">
+                    Learn more!
+                  </button>
+                  &nbsp;
+                  <button
+                    className="col text-end bg-transparent border-0"
+                    type="button"
+                  >
+                    <i className="fa fa-heart me-5 fa-2x text-danger" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
