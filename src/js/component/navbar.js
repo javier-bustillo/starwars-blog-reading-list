@@ -17,13 +17,17 @@ export const Navbar = () => {
         <div className="container-fluid">
           <Link to="/">
             <a className="navbar-brand">
-              <img className="ms-5" src={starWarsLogo} alt="star wars logo" />
+              <img
+                className="mt-3 ms-5 mb-2"
+                src={starWarsLogo}
+                alt="star wars logo"
+              />
             </a>
           </Link>
           <div className="btn-group dropstart me-5">
             <button
               type="button"
-              className="btn btn-dark dropdown-toggle"
+              className="btn btn-lg btn-dark dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
