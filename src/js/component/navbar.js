@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 
 import starWarsLogo from "../../img/Temp-150x91.jpg";
 import { ImBin } from "react-icons/im";
-class Bin extends React.Component {
-  render() {
-    <ImBin />;
-  }
-}
+
 /* import "../../styles/navbar.css"; */
 
 export const Navbar = () => {
@@ -27,7 +23,7 @@ export const Navbar = () => {
           <div className="btn-group dropstart me-5">
             <button
               type="button"
-              className="btn btn-lg btn-dark dropdown-toggle"
+              className="btn btn-dark dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
