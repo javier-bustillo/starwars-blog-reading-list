@@ -4,28 +4,56 @@ import starWarsPlanet from "../../img/planet-sample.png";
 import "../../styles/home.css";
 
 export const Planet = () => (
-  <div className="d-flex row justify-content-center m-5">
-    <div className="card mb-3 border-0" style={{ maxWidth: "1500px" }}>
-      <div className="col-md-4">
-        <img
-          src={starWarsPlanet}
-          className="img-fluid rounded-start mt-5"
-          alt="..."
-        />
-      </div>
-
-      <div className="col-md-3 mt-5 text-end">
-        <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p className="card-text">
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </p>
-        </div>
+  <>
+    <div className="row d-flex justify-content-center m-3">
+      <img
+        src={starWarsPlanet}
+        alt="..."
+        style={{ maxWidth: "500px" }}
+        className="col"
+      />
+      <div className="col text-center">
+        <h1>Tatooine</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum
+          ligula vitae dapibus vestibulum. In iaculis, tortor vel accumsan
+          pellentesque, magna sem volutpat sem, quis viverra sem ipsum vitae
+          enim. Nullam nisi ex, faucibus tempus aliquet eu, mollis vitae diam.
+          Aliquam convallis sem sit amet libero ultricies rutrum. Sed mollis
+          consectetur eros, at bibendum ligula fringilla sit amet. In hac
+          habitasse platea dictumst. Morbi tincidunt eget libero maximus
+          vulputate. Nam massa urna, vulputate nec sagittis quis, euismod non
+          risus. Etiam viverra placerat libero, vitae ornare nisi vulputate sit
+          amet. Nam quam felis, aliquet vel tellus tincidunt, fringilla blandit
+          nisl.
+        </p>
       </div>
     </div>
-  </div>
+
+    <div className="table-responsive">
+      <table className="table caption-top">
+        <caption>Planet Details</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Climate</th>
+            <th scope="col">Population</th>
+            <th scope="col">Orbital Period</th>
+            <th scope="col">Rotation Period</th>
+            <th scope="col">Diameter</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tatooine</td>
+            <td>arid</td>
+            <td>2000000</td>
+            <td>12</td>
+            <td>6</td>
+            <td>2.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </>
 );
