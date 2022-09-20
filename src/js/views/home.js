@@ -138,7 +138,7 @@ export const Home = () => (
         </div>
       </div>
     </div>
-    <div className="ms-3 mt-5 mb-3">
+    <div className="ms-3 mt-5 mb-5">
       <h1 className="planets-title">Planets</h1>
     </div>
     <div

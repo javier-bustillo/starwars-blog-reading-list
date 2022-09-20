@@ -1,18 +1,18 @@
 import React from "react";
 
-import starWarsPlanet from "../../img/planet-sample.png";
+import starWarsCharacter from "../../img/storm-trooper.png";
 
-export const Planet = () => (
+export const Character = () => (
   <>
     <div className="row d-flex justify-content-center m-3">
       <img
-        src={starWarsPlanet}
+        src={starWarsCharacter}
         alt="..."
-        style={{ maxWidth: "500px" }}
+        style={{ maxWidth: "500px", maxHeight: "600px" }}
         className="col"
       />
       <div className="col text-center">
-        <h1>Tatooine</h1>
+        <h1>Storm Trooper</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum
           ligula vitae dapibus vestibulum. In iaculis, tortor vel accumsan
@@ -35,11 +35,11 @@ export const Planet = () => (
         <thead>
           <tr>
             <th scope="col">Name</th>
-            <th scope="col">Climate</th>
-            <th scope="col">Population</th>
-            <th scope="col">Orbital Period</th>
-            <th scope="col">Rotation Period</th>
-            <th scope="col">Diameter</th>
+            <th scope="col">BirthDate</th>
+            <th scope="col">Eye Color</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Skin Color</th>
+            <th scope="col">Height</th>
           </tr>
         </thead>
         <tbody>
