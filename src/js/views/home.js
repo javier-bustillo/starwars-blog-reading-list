@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../../styles/home.css";
 
@@ -28,16 +29,20 @@ export const Home = () => (
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
                 <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
+                  <Link to="/character-details">
+                    <button className="btn btn-primary ms-2 col" type="button">
+                      Learn more!
+                    </button>
+                  </Link>
                   &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                  <Link to="">
+                    <button
+                      className="col text-end bg-transparent border-0"
+                      type="button"
+                    >
+                      <i className="fa fa-heart me-5 fa-2x text-danger" />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -161,9 +166,11 @@ export const Home = () => (
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
                 <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
+                  <Link to="planet-details">
+                    <button className="btn btn-primary ms-2 col" type="button">
+                      Learn more!
+                    </button>
+                  </Link>
                   &nbsp;
                   <button
                     className="col text-end bg-transparent border-0"

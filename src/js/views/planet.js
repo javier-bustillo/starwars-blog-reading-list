@@ -31,7 +31,6 @@ export const Planet = () => (
 
     <div className="table-responsive">
       <table className="table caption-top">
-        <caption>Planet Details</caption>
         <thead>
           <tr>
             <th scope="col">Name</th>
