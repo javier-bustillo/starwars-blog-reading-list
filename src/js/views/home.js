@@ -28,21 +28,22 @@ export const Home = () => (
                 Eye color: blue
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <Link to="/character-details">
-                    <button className="btn btn-primary ms-2 col" type="button">
-                      Learn more!
-                    </button>
-                  </Link>
-                  &nbsp;
-                  <Link to="">
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/character-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
                     <button
-                      className="col text-end bg-transparent border-0"
+                      className="like-btn text-end bg-transparent"
                       type="button"
                     >
-                      <i className="fa fa-heart me-5 fa-2x text-danger" />
+                      <i className="fa fa-heart fa-1x p-2" />
                     </button>
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -63,17 +64,22 @@ export const Home = () => (
                 Eye color: blue
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
-                  &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/character-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <button
+                      className="like-btn text-end bg-transparent"
+                      type="button"
+                    >
+                      <i className="fa fa-heart fa-1x p-2" />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -94,17 +100,22 @@ export const Home = () => (
                 Eye color: blue
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
-                  &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/character-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <button
+                      className="like-btn text-end bg-transparent"
+                      type="button"
+                    >
+                      <i className="fa fa-heart fa-1x p-2" />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,17 +136,58 @@ export const Home = () => (
                 Eye color: blue
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
-                  &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/character-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <button
+                      className="like-btn text-end bg-transparent"
+                      type="button"
+                    >
+                      <i className="fa fa-heart fa-1x p-2" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card">
+            <img
+              src="https://via.placeholder.com/400"
+              className="card-img-top"
+              alt="..."
+            />
+            <div className="card-body">
+              <h5 className="card-title">Character Name</h5>
+              <p className="card-text">
+                Gender: male<br></br>
+                Hair color: blonde<br></br>
+                Eye color: blue
+              </p>
+              <div className="d-grid gap-2 d-md-block mt-3 mb-2">
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/character-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <button
+                      className="like-btn text-end bg-transparent"
+                      type="button"
+                    >
+                      <i className="fa fa-heart fa-1x p-2" />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -165,19 +217,22 @@ export const Home = () => (
                 Terrain: mountain<br></br>
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <Link to="planet-details">
-                    <button className="btn btn-primary ms-2 col" type="button">
-                      Learn more!
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/planet-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <button
+                      className="like-btn text-end bg-transparent"
+                      type="button"
+                    >
+                      <i className="fa fa-heart fa-1x p-2" />
                     </button>
-                  </Link>
-                  &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,17 +252,22 @@ export const Home = () => (
                 Terrain: mountain<br></br>
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
-                  &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/planet-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <button
+                      className="like-btn text-end bg-transparent"
+                      type="button"
+                    >
+                      <i className="fa fa-heart fa-1x p-2" />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -227,17 +287,27 @@ export const Home = () => (
                 Terrain: mountain<br></br>
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
-                  &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                <div className="d-grid gap-2 d-md-block mt-3 mb-2">
+                  <div className="row justify-content-between">
+                    <div className="col-8">
+                      <Link to="/planet-details">
+                        <button
+                          className="btn btn-outline-primary"
+                          type="button"
+                        >
+                          Learn more!
+                        </button>
+                      </Link>
+                    </div>
+                    <div className="col-4">
+                      <button
+                        className="like-btn text-end bg-transparent"
+                        type="button"
+                      >
+                        <i className="fa fa-heart fa-1x p-2" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -257,17 +327,22 @@ export const Home = () => (
                 Terrain: mountain<br></br>
               </p>
               <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-                <div className="row justify-content-evenly">
-                  <button className="btn btn-primary ms-2 col" type="button">
-                    Learn more!
-                  </button>
-                  &nbsp;
-                  <button
-                    className="col text-end bg-transparent border-0"
-                    type="button"
-                  >
-                    <i className="fa fa-heart me-5 fa-2x text-danger" />
-                  </button>
+                <div className="row justify-content-between">
+                  <div className="col-8">
+                    <Link to="/planet-details">
+                      <button className="btn btn-outline-primary" type="button">
+                        Learn more!
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="col-4">
+                    <button
+                      className="like-btn text-end bg-transparent"
+                      type="button"
+                    >
+                      <i className="fa fa-heart fa-1x p-2" />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

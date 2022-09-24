@@ -1,5 +1,6 @@
 import React from "react";
 
+import "../../styles/planet.css";
 import starWarsPlanet from "../../img/planet-sample.png";
 
 export const Planet = () => (
@@ -11,21 +12,26 @@ export const Planet = () => (
         style={{ maxWidth: "500px" }}
         className="col"
       />
-      <div className="col text-center">
-        <h1>Tatooine</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum
-          ligula vitae dapibus vestibulum. In iaculis, tortor vel accumsan
-          pellentesque, magna sem volutpat sem, quis viverra sem ipsum vitae
-          enim. Nullam nisi ex, faucibus tempus aliquet eu, mollis vitae diam.
-          Aliquam convallis sem sit amet libero ultricies rutrum. Sed mollis
-          consectetur eros, at bibendum ligula fringilla sit amet. In hac
-          habitasse platea dictumst. Morbi tincidunt eget libero maximus
-          vulputate. Nam massa urna, vulputate nec sagittis quis, euismod non
-          risus. Etiam viverra placerat libero, vitae ornare nisi vulputate sit
-          amet. Nam quam felis, aliquet vel tellus tincidunt, fringilla blandit
-          nisl.
-        </p>
+      <div className="col text-center" style={{ maxWidth: "600px" }}>
+        <div className="mt-2">
+          <h1>Tatooine</h1>
+        </div>
+
+        <div className="ms-3 mt-5">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum
+            ligula vitae dapibus vestibulum. In iaculis, tortor vel accumsan
+            pellentesque, magna sem volutpat sem, quis viverra sem ipsum vitae
+            enim. Nullam nisi ex, faucibus tempus aliquet eu, mollis vitae diam.
+            Aliquam convallis sem sit amet libero ultricies rutrum. Sed mollis
+            consectetur eros, at bibendum ligula fringilla sit amet. In hac
+            habitasse platea dictumst. Morbi tincidunt eget libero maximus
+            vulputate. Nam massa urna, vulputate nec sagittis quis, euismod non
+            risus. Etiam viverra placerat libero, vitae ornare nisi vulputate
+            sit amet. Nam quam felis, aliquet vel tellus tincidunt, fringilla
+            blandit nisl.
+          </p>
+        </div>
       </div>
     </div>
 

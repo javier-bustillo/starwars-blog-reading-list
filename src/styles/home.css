@@ -5,3 +5,21 @@
 .planets-title {
     color: red;
 }
+
+.btn {
+    transition-duration: 0.4s;
+}
+
+.like-btn {
+    border-radius: 3px;
+    border-color: gold;
+}
+
+.fa-heart {
+    color: gold;
+    transition-duration: 0.4s;
+}
+
+.fa-heart:hover {
+    color: black;
+}
