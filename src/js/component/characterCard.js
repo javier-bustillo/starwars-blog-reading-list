@@ -1,37 +1,42 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
-export const CharacterCard = () => (
-  <div className="col">
-    <div className="card">
-      <img src="https://via.placeholder.com/400" className="card-img-top" />
-      <div className="card-body">
-        <h5 className="card-title">Character Name</h5>
-        <p className="card-text">
-          Gender: male<br></br>
-          Hair color: blonde<br></br>
-          Eye color: blue
-        </p>
-        <div className="d-grid gap-2 d-md-block mt-3 mb-2">
-          <div className="row justify-content-between">
-            <div className="col-8">
-              <Link to="/character-details">
-                <button className="btn btn-outline-primary" type="button">
-                  Learn more!
+export const CharacterCard = () => {
+  const { store, actions } = useContext(Context);
+  
+  return (
+    <div className="col">
+      <div className="card">
+        <img src="https://via.placeholder.com/400" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">Character Name</h5>
+          <p className="card-text">
+            Gender: male<br></br>
+            Hair color: blonde<br></br>
+            Eye color: blue
+          </p>
+          <div className="d-grid gap-2 d-md-block mt-3 mb-2">
+            <div className="row justify-content-between">
+              <div className="col-8">
+                <Link to="/character-details">
+                  <button className="btn btn-outline-primary" type="button">
+                    Learn more!
+                  </button>
+                </Link>
+              </div>
+              <div className="col-4">
+                <button
+                  className="like-btn text-end bg-transparent"
+                  type="button"
+                >
+                  <i className="fa fa-heart fa-1x p-2" />
                 </button>
-              </Link>
-            </div>
-            <div className="col-4">
-              <button
-                className="like-btn text-end bg-transparent"
-                type="button"
-              >
-                <i className="fa fa-heart fa-1x p-2" />
-              </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};

@@ -27,9 +27,24 @@ const getState = ({
             },
             loadSomeData: () => {
                 /**
-                	fetch().then().then(data => setStore({ "foo": data.bar }))
+                    fetch().then().then(data => setStore({ "foo": data.bar }))
                 */
             },
+            getCharacter: () => {
+                fetch('https://swapi.dev/api/people')
+                    .then((response) => response.json())
+                    .then(data => setStore({
+                        characters: data.results
+                    }))
+            },
+            getPlanet: () => {
+                fetch('https://swapi.dev/api/planets')
+                    .then((response) => response.json())
+                    .then(data => setStore({
+                        planets: data.results
+                    }))
+            },
+
             changeColor: (index, color) => {
                 //get the store
                 const store = getStore();
@@ -40,6 +55,8 @@ const getState = ({
                     if (i === index) elm.background = color;
                     return elm;
                 });
+
+
 
                 //reset the global store
                 setStore({
