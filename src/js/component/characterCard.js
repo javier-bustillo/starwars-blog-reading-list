@@ -6,7 +6,7 @@ export const CharacterCard = ({ name, gender, hairColor, eyeColor }) => {
   const { store, actions } = useContext(Context);
 
   return (
-    <div className="col" style={{ minWidth: "300px" }}>
+    <div className="col" style={{ minWidth: "400px" }}>
       <div className="card">
         <img src="https://via.placeholder.com/400" className="card-img-top" />
         <div className="card-body">

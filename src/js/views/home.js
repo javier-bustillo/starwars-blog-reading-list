@@ -20,7 +20,12 @@ export const Home = () => {
       >
         <div className="card-group row gx-5 mb-5 d-flex flex-nowrap">
           {store.characters.map((item) => (
-            <CharacterCard name={item.name} gender={item.gender} hairColor={item.hair_color} eyeColor={item.eye_color}/>
+            <CharacterCard
+              name={item.name}
+              gender={item.gender}
+              hairColor={item.hair_color}
+              eyeColor={item.eye_color}
+            />
           ))}
         </div>
       </div>
@@ -33,8 +38,8 @@ export const Home = () => {
         style={{ overflowX: "auto", fontSize: "14px" }}
       >
         <div className="card-group row gx-5 mb-5 d-flex flex-nowrap">
-          {store.characters.map((item) => (
-            <PlanetCard name={item.name} gender={item.gender} hairColor={item.hair_color} eyeColor={item.eye_color}/>
+          {store.planets.map((item) => (
+            <PlanetCard name={item.name} population={item.population} terrain={item.terrain} />
           ))}
         </div>
       </div>

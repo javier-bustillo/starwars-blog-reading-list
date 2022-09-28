@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const PlanetCard = () => (
-  <div className="col" style={{ minWidth: "300px" }}>
+export const PlanetCard = ({ name, population, terrain }) => (
+  <div className="col" style={{ minWidth: "400px" }}>
     <div className="card">
       <img src="https://via.placeholder.com/400" className="card-img-top" />
       <div className="card-body">
-        <h5 className="card-title">Planet Name</h5>
+        <h5 className="card-title">{name}</h5>
         <p className="card-text">
-          Population: 4000<br></br>
-          Terrain: mountain<br></br>
+          Population: {population}
+          <br></br>
+          Terrain: {terrain}
+          <br></br>
         </p>
         <div className="d-grid gap-2 d-md-block mt-3 mb-2">
           <div className="row justify-content-between">
