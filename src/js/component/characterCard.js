@@ -2,19 +2,20 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-export const CharacterCard = () => {
+export const CharacterCard = ({ name, gender, hairColor, eyeColor }) => {
   const { store, actions } = useContext(Context);
-  
+
   return (
-    <div className="col">
+    <div className="col" style={{ minWidth: "300px" }}>
       <div className="card">
         <img src="https://via.placeholder.com/400" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Character Name</h5>
+          <h5 className="card-title">{name}</h5>
           <p className="card-text">
-            Gender: male<br></br>
-            Hair color: blonde<br></br>
-            Eye color: blue
+            Gender: {gender}
+            <br></br>
+            Hair color: {hairColor}<br></br>
+            Eye color: {eyeColor}
           </p>
           <div className="d-grid gap-2 d-md-block mt-3 mb-2">
             <div className="row justify-content-between">

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const PlanetCard = () => (
-  <div className="col">
+  <div className="col" style={{ minWidth: "300px" }}>
     <div className="card">
       <img src="https://via.placeholder.com/400" className="card-img-top" />
       <div className="card-body">
