@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext";
 
-export const CharacterCard = ({ name, gender, hairColor, eyeColor }) => {
-  const { store, actions } = useContext(Context);
-
+export const CharacterCard = ({ name, gender, hairColor, eyeColor, id }) => {
   return (
     <div className="col" style={{ minWidth: "400px" }}>
       <div className="card">
@@ -14,13 +11,14 @@ export const CharacterCard = ({ name, gender, hairColor, eyeColor }) => {
           <p className="card-text">
             Gender: {gender}
             <br></br>
-            Hair color: {hairColor}<br></br>
+            Hair color: {hairColor}
+            <br></br>
             Eye color: {eyeColor}
           </p>
           <div className="d-grid gap-2 d-md-block mt-3 mb-2">
             <div className="row justify-content-between">
               <div className="col-8">
-                <Link to="/character-details">
+                <Link to={"/character-details/" + id}>
                   <button className="btn btn-outline-primary" type="button">
                     Learn more!
                   </button>

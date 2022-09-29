@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const PlanetCard = ({ name, population, terrain }) => (
+export const PlanetCard = ({ name, population, terrain, id }) => (
   <div className="col" style={{ minWidth: "400px" }}>
     <div className="card">
       <img src="https://via.placeholder.com/400" className="card-img-top" />
@@ -16,7 +16,7 @@ export const PlanetCard = ({ name, population, terrain }) => (
         <div className="d-grid gap-2 d-md-block mt-3 mb-2">
           <div className="row justify-content-between">
             <div className="col-8">
-              <Link to="/planet-details">
+              <Link to={"/planet-details/" + id}>
                 <button className="btn btn-outline-primary" type="button">
                   Learn more!
                 </button>
