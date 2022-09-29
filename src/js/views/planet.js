@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import starWarsPlanet from "../../img/planet-sample.png";
+import "../../styles/planet.css"
 
 export const Planet = (props) => {
   const { store, actions } = useContext(Context);
