@@ -24,7 +24,7 @@ export const Planet = (props) => {
           src={starWarsPlanet}
           alt="..."
           style={{ maxWidth: "500px" }}
-          className="col"
+          className="col mb-2"
         />
         <div className="col text-center" style={{ maxWidth: "600px" }}>
           <div className="mt-2">
@@ -49,7 +49,7 @@ export const Planet = (props) => {
         </div>
       </div>
 
-      <div className="table-responsive">
+      <div className="table-responsive m-2">
         <table className="table caption-top">
           <thead>
             <tr>

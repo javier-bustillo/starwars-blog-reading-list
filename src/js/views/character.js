@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-import starWarsCharacter from "../../img/storm-trooper.png";
+import starWarsCharacter from "../../img/characters-sample.png";
 import "../../styles/character.css";
 
 export const Character = (props) => {
@@ -19,15 +19,15 @@ export const Character = (props) => {
 
   return (
     <>
-      <div className="row d-flex justify-content-center m-3">
+      <div className="row d-flex justify-content-center">
         <img
           src={starWarsCharacter}
           alt="..."
           style={{ maxWidth: "350px", maxHeight: "500px" }}
-          className="col me-5"
+          className="col mb-4"
         />
         <div className="col text-center" style={{ maxWidth: "500px" }}>
-          <div className="mt-2">
+          <div className="mt-5">
             <h1>{dataCharacter.name}</h1>
           </div>
 
@@ -48,7 +48,7 @@ export const Character = (props) => {
           </div>
         </div>
       </div>
-      <div className="table-responsive">
+      <div className="table-responsive ms-2 me-2">
         <table className="table caption-top">
           <thead>
             <tr>
