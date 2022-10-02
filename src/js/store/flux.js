@@ -36,6 +36,7 @@ const getState = ({
                     .then(data => setStore({
                         characters: data.results
                     }))
+                    .catch((err) => console.error(err));
             },
             getPlanet: () => {
                 fetch('https://swapi.dev/api/planets')
@@ -43,6 +44,7 @@ const getState = ({
                     .then(data => setStore({
                         planets: data.results
                     }))
+                    .catch((err) => console.error(err));
             },
 
             changeColor: (index, color) => {

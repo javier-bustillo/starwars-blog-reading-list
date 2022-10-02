@@ -27,7 +27,7 @@ export const Navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              &nbsp;<span className="badge bg-danger rounded-circle">4</span>
+              &nbsp;<span className="badge bg-danger rounded-circle">0</span>
               &nbsp;Read Later
             </button>
             <ul className="dropdown-menu">
