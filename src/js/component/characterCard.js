@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
+import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 export const CharacterCard = ({ name, gender, hairColor, eyeColor, id }) => {
+  const { actions } = useContext(Context);
   return (
     <div className="col" style={{ minWidth: "400px" }}>
       <div className="card">
@@ -28,6 +30,9 @@ export const CharacterCard = ({ name, gender, hairColor, eyeColor, id }) => {
                 <button
                   className="like-btn text-end bg-transparent"
                   type="button"
+                  onClick={() => {
+                    actions.addReadMoreItem(name);
+                  }}
                 >
                   <i className="fa fa-heart fa-1x p-2" />
                 </button>

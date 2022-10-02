@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 import starWarsLogo from "../../img/Temp-150x91.jpg";
-import { ImBin } from "react-icons/im";
-
-/* import "../../styles/navbar.css"; */
 
 export const Navbar = () => {
+  const { store, actions } = useContext(Context);
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,34 +27,30 @@ export const Navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              &nbsp;<span className="badge bg-danger rounded-circle">0</span>
+              &nbsp;
+              <span className="badge bg-danger rounded-circle">
+                {store.readMoreList.length}
+              </span>
               &nbsp;Read Later
             </button>
             <ul className="dropdown-menu">
-              <li>
-                <a className="dropdown-item" href="#">
-                  Menu item &nbsp;&nbsp;
-                  <button className="border-0 bg-transparent">
-                    <ImBin />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Menu item &nbsp;&nbsp;
-                  <button className="border-0 bg-transparent">
-                    <ImBin />
-                  </button>
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Menu item &nbsp;&nbsp;
-                  <button className="border-0 bg-transparent">
-                    <ImBin />
-                  </button>
-                </a>
-              </li>
+              {store.readMoreList.length > 0 ? (
+                store.readMoreList.map((item, index) => (
+                  <li key={index} className="dropdown-item">
+                    {item}
+                    <button
+                      className="btn-trash border border-1 float-end"
+                      onClick={() => {
+                        actions.delReadMoreItem(item);
+                      }}
+                    >
+                      <i className="fas fa-trash-alt"></i>
+                    </button>
+                  </li>
+                ))
+              ) : (
+                <li className="dropdown-item text-center">(empty)</li>
+              )}
             </ul>
           </div>
         </div>
