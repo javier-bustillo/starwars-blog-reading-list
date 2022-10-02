@@ -56,12 +56,12 @@ const getState = ({ getStore, getActions, setStore }) => {
           });
         }
       },
-      delReadMoreItem: (characterItem) => {
+      delReadMoreItem: (whateverItem) => {
         const store = getStore();
-        const characters = store.readMoreList;
+        const itemListed = store.readMoreList;
 
-        let readMoreListFiltered = characters.filter(
-          (item) => item !== characterItem
+        let readMoreListFiltered = itemListed.filter(
+          (item) => item !== whateverItem
         );
 
         setStore({
