@@ -48,7 +48,7 @@ export const Home = () => {
               population={item.population}
               terrain={item.terrain}
               gravity={item.gravity}
-              id={index + 2}
+              id={index + 1}
             />
           ))}
         </div>
