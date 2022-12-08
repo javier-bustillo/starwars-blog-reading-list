@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
-export const PlanetCard = ({ name, population, terrain, id }) => {
+export const PlanetCard = ({ name, population, terrain, gravity, id }) => {
   const { actions } = useContext(Context);
   return (
     <div className="col" style={{ minWidth: "400px" }}>
@@ -14,6 +14,8 @@ export const PlanetCard = ({ name, population, terrain, id }) => {
             Population: {population}
             <br></br>
             Terrain: {terrain}
+            <br></br>
+            Gravity: {gravity}
             <br></br>
           </p>
           <div className="d-grid gap-2 d-md-block mt-3 mb-2">

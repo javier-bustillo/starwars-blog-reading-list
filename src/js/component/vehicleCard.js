@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
-export const VehicleCard = ({ name, model, manufacturer, credits }) => {
+export const VehicleCard = ({ name, model, manufacturer, costInCredits, id }) => {
   const { actions } = useContext(Context);
   return (
     <div className="col" style={{ minWidth: "400px" }}>
@@ -15,7 +15,7 @@ export const VehicleCard = ({ name, model, manufacturer, credits }) => {
             <br></br>
             Manufacturer: {manufacturer}
             <br></br>
-            Cost in Credits: {credits}
+            Cost in Credits: {costInCredits}
           </p>
           <div className="d-grid gap-2 d-md-block mt-3 mb-2">
             <div className="row justify-content-between">

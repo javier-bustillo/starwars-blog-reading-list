@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { CharacterCard } from "../component/characterCard";
 import { PlanetCard } from "../component/planetCard";
+import { VehicleCard } from "../component/vehicleCard";
 
 import "../../styles/home.css";
 
@@ -46,6 +47,27 @@ export const Home = () => {
               name={item.name}
               population={item.population}
               terrain={item.terrain}
+              gravity={item.gravity}
+              id={index + 1}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="ms-3 mt-5 mb-5">
+        <h1 className="planets-title">Vehicles</h1>
+      </div>
+      <div
+        className="card-group-wrapper ms-3"
+        style={{ overflowX: "auto", fontSize: "14px" }}
+      >
+        <div className="card-group row gx-5 mb-5 d-flex flex-nowrap">
+          {store.vehicles.map((item, index) => (
+            <VehicleCard
+              key={index}
+              name={item.name}
+              model={item.model}
+              manufacturer={item.manufacturer}
+              credits={item.cost_in_credits}
               id={index + 1}
             />
           ))}
