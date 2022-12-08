@@ -48,13 +48,13 @@ export const Home = () => {
               population={item.population}
               terrain={item.terrain}
               gravity={item.gravity}
-              id={index + 1}
+              id={index + 2}
             />
           ))}
         </div>
       </div>
       <div className="ms-3 mt-5 mb-5">
-        <h1 className="planets-title">Vehicles</h1>
+        <h1 className="vehicles-title">Vehicles</h1>
       </div>
       <div
         className="card-group-wrapper ms-3"

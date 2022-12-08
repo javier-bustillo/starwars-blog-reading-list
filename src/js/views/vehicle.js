@@ -6,6 +6,7 @@ import starWarsCharacter from "../../img/characters-sample.png";
 import "../../styles/character.css";
 
 export const Vehicle = (props) => {
+  const { store, actions } = useContext(Context);
   const [dataVehicle, setDataVehicle] = useState({});
   const { theid } = useParams();
 
