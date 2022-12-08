@@ -39,7 +39,7 @@ const getState = ({
                     )
                     .catch((err) => console.error(err));
             },
-            getVehicles: () => {
+            getVehicle: () => {
                 fetch("https://swapi.dev/api/vehicles")
                     .then((response) => response.json())
                     .then((data) =>
