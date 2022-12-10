@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
-export const CharacterCard = ({ name, gender, hairColor, eyeColor, id }) => {
+export const CharacterCard = ({ name, gender, hairColor, eyeColor, photo, id }) => {
   const { actions } = useContext(Context);
   return (
     <div className="col" style={{ minWidth: "400px" }}>
       <div className="card">
-        <img src="https://via.placeholder.com/400" className="card-img-top" />
+        <img src={"https://starwars-visualguide.com/assets/img/characters/" + id + ".jpg"} className="card-img-top" />
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p className="card-text">

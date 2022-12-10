@@ -22,16 +22,7 @@ const getState = ({
                     )
                     .catch((err) => console.error(err));
             },
-            getPhotoCharacter: () => {
-                fetch("https://starwars-visualguide.com/#/characters/")
-                    .then((response) => response.json())
-                    .then((data) =>
-                        setStore({
-                            photoCharacters: data.results,
-                        })
-                    )
-                    .catch((err) => console.error(err));
-            },
+
             getPlanet: () => {
                 fetch("https://swapi.dev/api/planets/")
                     .then((response) => response.json())
