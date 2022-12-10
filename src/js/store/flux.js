@@ -6,6 +6,7 @@ const getState = ({
     return {
         store: {
             characters: [],
+            photoCharacters: [],
             planets: [],
             vehicles: [],
             readMoreList: [],
@@ -17,6 +18,16 @@ const getState = ({
                     .then((data) =>
                         setStore({
                             characters: data.results,
+                        })
+                    )
+                    .catch((err) => console.error(err));
+            },
+            getPhotoCharacter: () => {
+                fetch("https://starwars-visualguide.com/#/characters/")
+                    .then((response) => response.json())
+                    .then((data) =>
+                        setStore({
+                            photoCharacters: data.results,
                         })
                     )
                     .catch((err) => console.error(err));
