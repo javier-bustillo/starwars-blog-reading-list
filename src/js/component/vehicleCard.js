@@ -7,7 +7,7 @@ export const VehicleCard = ({ name, model, manufacturer, id }) => {
   return (
     <div className="col" style={{ minWidth: "400px" }}>
       <div className="card">
-        <img src="https://via.placeholder.com/400" className="card-img-top" />
+        <img src={"https://starwars-visualguide.com/assets/img/vehicles/" + (id + 3) + ".jpg"} className="card-img-top" />
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p className="card-text">
