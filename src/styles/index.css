@@ -1,3 +1,7 @@
-/* 
-    General Styles
-*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+    background: black;
+    font-family: "Inter", sans-serif;
+    color: #282727;
+}
