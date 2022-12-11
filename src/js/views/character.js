@@ -18,7 +18,7 @@ export const Character = (props) => {
 
   return (
     <>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center mt-5 mb-5">
         <img
           src={
             "https://starwars-visualguide.com/assets/img/characters/" +
@@ -51,7 +51,7 @@ export const Character = (props) => {
           </div>
         </div>
       </div>
-      <div className="table-responsive ms-2 me-2">
+      <div className="table-responsive m-5">
         <table className="table caption-top">
           <thead>
             <tr>

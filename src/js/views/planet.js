@@ -18,13 +18,14 @@ export const Planet = (props) => {
 
   return (
     <>
-      <div className="row d-flex justify-content-center m-3">
+      <div className="row d-flex justify-content-center mt-5 mb-5">
         <img
           src={
             "https://starwars-visualguide.com/assets/img/planets/" +
             theid +
             ".jpg"
           }
+          
           alt={"star wars planet " + dataPlanet.name}
           style={{ maxWidth: "500px" }}
           className="col mb-2"
@@ -52,7 +53,7 @@ export const Planet = (props) => {
         </div>
       </div>
 
-      <div className="table-responsive m-2">
+      <div className="table-responsive m-5">
         <table className="table caption-top">
           <thead>
             <tr>
