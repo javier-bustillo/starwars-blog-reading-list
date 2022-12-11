@@ -33,16 +33,7 @@ const getState = ({
                     )
                     .catch((err) => console.error(err));
             },
-            getVehicle: () => {
-                fetch("https://swapi.dev/api/vehicles/")
-                    .then((response) => response.json())
-                    .then((data) =>
-                        setStore({
-                            vehicles: data.results,
-                        })
-                    )
-                    .catch((err) => console.error(err));
-            },
+
             addReadMoreItem: (item) => {
                 const store = getStore();
                 if (!store.readMoreList.includes(item)) {
