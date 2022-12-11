@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-import starWarsPlanet from "../../img/planet-sample.png";
-import "../../styles/planet.css"
+import "../../styles/planet.css";
 
 export const Planet = (props) => {
   const { store, actions } = useContext(Context);
@@ -21,8 +20,12 @@ export const Planet = (props) => {
     <>
       <div className="row d-flex justify-content-center m-3">
         <img
-          src={"https://starwars-visualguide.com/assets/img/planets/" + theid + ".jpg"} 
-          alt={"star wars planet " + dataPlanet.name }
+          src={
+            "https://starwars-visualguide.com/assets/img/planets/" +
+            theid +
+            ".jpg"
+          }
+          alt={"star wars planet " + dataPlanet.name}
           style={{ maxWidth: "500px" }}
           className="col mb-2"
         />

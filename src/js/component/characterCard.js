@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
-export const CharacterCard = ({ name, gender, hairColor, eyeColor, photo, id }) => {
+export const CharacterCard = ({ name, gender, hairColor, eyeColor, id }) => {
   const { actions } = useContext(Context);
   return (
     <div className="col" style={{ minWidth: "400px" }}>

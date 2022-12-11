@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-import starWarsCharacter from "../../img/characters-sample.png";
 import "../../styles/character.css";
 
 export const Character = (props) => {
@@ -21,8 +20,12 @@ export const Character = (props) => {
     <>
       <div className="row d-flex justify-content-center">
         <img
-          src={"https://starwars-visualguide.com/assets/img/characters/" + theid + ".jpg"} 
-          alt={"star wars character" + dataCharacter.name }
+          src={
+            "https://starwars-visualguide.com/assets/img/characters/" +
+            theid +
+            ".jpg"
+          }
+          alt={"star wars character" + dataCharacter.name}
           style={{ maxWidth: "350px", maxHeight: "500px" }}
           className="col mb-4"
         />

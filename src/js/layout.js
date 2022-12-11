@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Planet } from "./views/planet.js";
 import { Character } from "./views/character.js";
-import { Vehicle } from "./views/vehicle.js";
+
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
