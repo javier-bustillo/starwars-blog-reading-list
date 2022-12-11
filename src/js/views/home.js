@@ -12,14 +12,10 @@ export const Home = () => {
   return (
     <div className="mt-5 ms-5">
       <div className="ms-3 mb-5">
-        <hr></hr>
         <h1 className="characters-title">Characters</h1>
         <hr></hr>
       </div>
-      <div
-        className="card-group-wrapper ms-3"
-        style={{ overflowX: "auto", fontSize: "14px" }}
-      >
+      <div className="card-group-wrapper ms-3" style={{ overflowX: "auto" }}>
         <div className="card-group row gx-5 mb-5 d-flex flex-nowrap">
           {store.characters.map((item, index) => (
             <CharacterCard
@@ -34,15 +30,11 @@ export const Home = () => {
         </div>
       </div>
       <div className="ms-3 mt-5 mb-5">
-        <hr></hr>
         <h1 className="planets-title">Planets</h1>
         <hr></hr>
       </div>
 
-      <div
-        className="card-group-wrapper ms-3"
-        style={{ overflowX: "auto", fontSize: "14px" }}
-      >
+      <div className="card-group-wrapper ms-3" style={{ overflowX: "auto" }}>
         <div className="card-group row gx-5 mb-5 d-flex flex-nowrap">
           {store.planets.map((item, index) => (
             <PlanetCard
