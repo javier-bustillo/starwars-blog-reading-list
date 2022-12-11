@@ -21,8 +21,8 @@ export const Character = (props) => {
     <>
       <div className="row d-flex justify-content-center">
         <img
-          src={starWarsCharacter}
-          alt="..."
+          src={"https://starwars-visualguide.com/assets/img/characters/" + theid + ".jpg"} 
+          alt={"star wars character" + dataCharacter.name }
           style={{ maxWidth: "350px", maxHeight: "500px" }}
           className="col mb-4"
         />
