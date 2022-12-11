@@ -21,8 +21,8 @@ export const Planet = (props) => {
     <>
       <div className="row d-flex justify-content-center m-3">
         <img
-          src={starWarsPlanet}
-          alt="..."
+          src={"https://starwars-visualguide.com/assets/img/planets/" + theid + ".jpg"} 
+          alt={"star wars planet " + dataPlanet.name }
           style={{ maxWidth: "500px" }}
           className="col mb-2"
         />
